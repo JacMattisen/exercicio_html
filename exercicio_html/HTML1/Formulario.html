@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Formulário de Cadastro </title>
+    <h1> <ol> <center> Preencha seus dados completos </center></ol> </h1>
 </head>
 <body>
-    <h1> <b> <center>  Formulário de cadastro  </center></b> </h1> 
+   
+    <form></form>
+    <h2> <b> <center>  Formulário de cadastro  </center></b> </h2> 
     <hr/>
     <form>
     <br/>
@@ -19,12 +22,52 @@
         <input id "e-mail"  placeholder = "e-mail"  /> 
     <br/>
     <br/>
-        <input id "Senha"  placeholder = "SENHA"  />  
+        <b><label for =  "Senha" > Senha </label></b>
+        <input id "Senha"  placeholder = "Senha"  />
+    <br/>
+    <br/>  
+        <b><label for =  "Confirme a Senha" > Confirme a Senha </label></b>
+        <input id "Confirme a senha"  placeholder = "Confirme a senha"  />  
+        <br/>
+    <br/>
+    <h3> <center> Agora que ja preencheu com seu nome, e-mail e escolheu sua senha, precisamos de mais alguns dados</center> </h3>
     <br/>
     <br/>
-    <center><button type = "submit"> ENVIAR DADOS </button> </center>
+        <b><label for="data de nascimento">Data de Nascimento</label></b>
+	    <input type='date' id='data de nascimento' name='data de nascimento'>
     <br/>
-    <center><button type = "reset"> LIMPAR DADOS </button> </center>
+    <br/>
+        <b><label for =  "Nacionalidade" > Nacionalidade </label></b>
+        <input type = "text" placeholder=" Seu país " />
+    <br/>
+    <br/>
+    <b><label for="estado">Estado</label></b>
+	<select id="estado" name="Estado">
+		<option value="SP">Sao Paulo</option>
+		<option value="MG">Minas Gerais</option>
+		<option value="ES">Espirito Santo</option>
+	</select>
+    <br/>
+    <br/>
+    <p><b>Genero</p></b>
+	    <input type="radio" id="sexo-masculino" name="sexo" value="Masculino">
+	    <label for="sexo-masculino">Masculino</label><br>
+
+	    <input type="radio" id="sexo-feminino" name="sexo" value="Feminino">
+	    <label for="sexo-feminino">Feminino</label>
+    <br/>
+        <input type="radio" id="indefinido" name="sexo" value="Indefinido">
+	    <label for="indefinido">Indefinido</label>
+    <br/>
+    <br/>
+        <label for="msg">Mande seu recado criativo para o sorteio</label><br>
+        <textarea id="msg" name="msg" rows="4" cols="50"></textarea>
+    <br/>
+    <br/>
+        <center><input type="reset" value="LIMPAR DADOS"></center>
+    <br/>
+        <center><input type="submit" value="ENVIAR DADOS"></center>
+
 
 </form>
 </body>
